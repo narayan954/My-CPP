@@ -17,7 +17,7 @@ int main(){
  int A[n];
  cout<<"Enter elements separated by space"<<endl;
  for(int i=0;i<n;i++) cin>>A[i];
- cin.ignore(numeric_limits<streamsize>::max(), '\n');
+ cin.ignore(numeric_limits<streamsize>::max(), '\n'); //It will clear the buffer before taking the new input
  cout<<"Enter an Element to be Searched: ";
  cin>>k;
  index=Search(A,n,k);
