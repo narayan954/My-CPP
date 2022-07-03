@@ -1,4 +1,6 @@
 #include<iostream>
+#include<ios> //for stream size
+#include<limits> //for numeric limits
 using namespace std;
 
 int Search(int A[],int n,int key){
@@ -15,8 +17,9 @@ int main(){
  int A[n];
  cout<<"Enter elements separated by space"<<endl;
  for(int i=0;i<n;i++) cin>>A[i];
+ cin.ignore(numeric_limits<streamsize>::max(), '\n');
  cout<<"Enter an Element to be Searched: ";
  cin>>k;
  index=Search(A,n,k);
- cout<<"Element found at index: "<<index<<endl;
+ index>=0?cout<<"Element found at index: "<<index<<endl:cout<<"ELement not found";
 }
