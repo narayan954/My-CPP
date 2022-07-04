@@ -1,3 +1,7 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+
 class Student{
 private:
     string name;
