@@ -38,9 +38,9 @@ int main(){
 	Item item;
 	ifstream fis("Items.txt");
 	cout<<endl;
-	for(int i=0;i<3;i++){
+	for(int i=0;i<n;i++){
     	fis>>item;
-    	cout<<"Item "<<i<<endl<<item<<endl;
+    	cout<<"Item "<<i+1<<endl<<item<<endl;
 	}
 }
 
